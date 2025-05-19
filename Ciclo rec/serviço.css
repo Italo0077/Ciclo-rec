@@ -1,0 +1,146 @@
+/* Fonte geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #e8f5e9; /* Verde clarinho */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.titulo-verde {
+    color: #4CAF50;
+    margin: 0;
+}
+
+/* Navegação */
+nav {
+    background-color: #1d2540;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Serviços */
+.servicos {
+    padding: 40px 20px;
+    background-color: #e3f2fd; /* Azul claro */
+    text-align: center;
+}
+
+.servicos .grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.servico {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px #1d2540(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
+}
+
+.servico img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.servico h3 {
+    color: #1d2540;
+}
+
+/* Seção CTA */
+.cta {
+    background: linear-gradient(to right, #4CAF50, #1d2540);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cta .btn {
+    display: inline-block;
+    background-color: white;
+    color: #4CAF50;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta .btn:hover {
+    background-color: #1d2540;
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1d2540; /* Azul escuro */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .servicos .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico {
+        width: 90%;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+}

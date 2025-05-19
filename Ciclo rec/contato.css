@@ -1,0 +1,156 @@
+/* Fonte base */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    color: #2E7D32;
+    font-size: 36px;
+    margin: 10px 0 0 0;
+}
+
+header p {
+    color: #555;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #1d2540;
+    padding: 10px 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de contato */
+.contato {
+    padding: 40px 20px;
+    background-color: #E3F2FD;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 28px;
+    color: #2E7D32;
+}
+
+/* Formulário */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1d2540;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form button {
+    background: #4CAF50;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #388E3C;
+}
+
+/* Informações de contato */
+.info-contato {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.info-contato h3 {
+    color: #1d2540;
+    font-size: 22px;
+}
+
+.info-contato p {
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1d2540;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    form {
+        width: 90%;
+    }
+}
